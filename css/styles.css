@@ -90,9 +90,10 @@ p {
 .navigation-list {
   display: flex;
   gap: 40px;
+  margin-right: 332px;
 }
 
-navigation-item {
+.navigation-item {
   padding: 24px 0;
 }
 
