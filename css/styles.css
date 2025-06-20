@@ -264,7 +264,7 @@ p {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .our-portfolio-cards {
@@ -273,6 +273,7 @@ p {
   gap: 24px;
   flex-wrap: wrap;
   row-gap: 48px;
+  padding: 32px 16px;
 }
 
 .our-portfolio-card {
@@ -310,21 +311,17 @@ p {
 .footer-text {
   color: #f4f4fd;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02px;
   max-width: 264px;
   padding-bottom: 100px;
 }
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
-.logo-footer {
-  padding-top: 100px;
-  margin-bottom: 16px;
-}
-
-.logo-web-footer {
+.footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -332,6 +329,12 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-logo-part {
+  color: #f4f4fd;
 }
 
 .logo-studio-footer {
