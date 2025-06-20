@@ -37,8 +37,7 @@ p {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px 0 15px;
 }
 
 .section {
@@ -55,11 +54,7 @@ p {
   padding: 24px 0;
 }
 
-.logo-container {
-  margin-right: 76px;
-}
-
-.logo-web {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -67,11 +62,11 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
-.logo-studio {
+.logo-part {
   color: #2e2f42;
-  letter-spacing: 0.03em;
 }
 
 .logo-studio:hover,
