@@ -9,12 +9,54 @@ ol {
   list-style-type: none;
 }
 
+ul,
+li {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 a {
   text-decoration: none;
   color: #2e2f42;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 120px 0;
+}
+
 /* ------------------Header----------------- */
+
+.header-navigation-direction {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.logo-container {
+  flex-grow: 1;
+}
+
 .logo-web {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -35,20 +77,27 @@ a {
   color: #404bbf;
 }
 
-.navigation {
+.navigation-panel {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: flex;
+  gap: 40px;
+  margin-right: 332px;
 }
 .navigation:hover,
 .navigation:focus {
   color: #404bbf;
 }
 
-.contact-info {
+.contacts {
   font-style: normal;
+  display: flex;
+  gap: 40px;
 }
 
+.contact-info-links {
+}
 .contact-link {
   font-style: normal;
   line-height: 1.5;
@@ -63,6 +112,9 @@ a {
 
 .hero-banner {
   background-color: #2e2f42;
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -72,6 +124,10 @@ a {
   line-height: 1.07;
   letter-spacing: 1.12px;
   text-align: center;
+  max-width: 496px;
+
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .button {
@@ -81,6 +137,14 @@ a {
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  border: none;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+  width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover,
@@ -90,17 +154,32 @@ a {
 }
 
 /*------------- FEATURES----------- */
+
+.features-content {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.features-text {
+  flex: 1;
+  min-width: 264px;
+}
+
 .features-title {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .features-description {
   line-height: 1.5;
   letter-spacing: 0.32px;
+  max-width: 264px;
 }
 
 /* ------------------OUR TEAM ----------------- */
@@ -116,10 +195,24 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   font-weight: 700;
+  padding-bottom: 72px;
+}
+
+.team-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 
 .team-card {
+  box-sizing: border-box;
+  width: 264px;
   background-color: #ffffff;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .team-member-name {
@@ -128,12 +221,15 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-member-description {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 
 /* --------------------OUR PORTFOLIO--------------- */
@@ -145,6 +241,31 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
+}
+
+.our-portfolio-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 48px;
+}
+
+.our-portfolio-card {
+  width: 360px;
+}
+
+.our-portfolio-card:hover {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.our-portfolio-card-text {
+  padding: 32px 0px 32px 16px;
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .portfolio-example {
@@ -153,6 +274,7 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .protfolio-description {
@@ -166,10 +288,17 @@ a {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  max-width: 264px;
+  padding-bottom: 100px;
 }
 
 .footer {
   background-color: #2e2f42;
+}
+
+.logo-footer {
+  padding-top: 100px;
+  margin-bottom: 16px;
 }
 
 .logo-web-footer {
