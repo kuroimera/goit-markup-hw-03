@@ -36,8 +36,9 @@ p {
 
 .container {
   width: 1158px;
-  padding: 0 15px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section {
@@ -48,14 +49,14 @@ p {
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
-.header-navigation-direction {
+.header-container {
   display: flex;
   align-items: center;
   padding: 24px 0;
 }
 
 .logo-container {
-  flex-grow: 1;
+  margin-right: 76px;
 }
 
 .logo-web {
@@ -83,22 +84,29 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   display: flex;
-  gap: 40px;
-  margin-right: 332px;
+  align-items: center;
 }
-.navigation:hover,
-.navigation:focus {
+
+.navigation-list {
+  display: flex;
+  gap: 40px;
+}
+
+navigation-item {
+  padding: 24px 0;
+}
+
+.navigation-item:hover,
+.navigation-item:focus {
   color: #404bbf;
 }
 
-.contacts {
+.contact-list {
   font-style: normal;
   display: flex;
   gap: 40px;
 }
 
-.contact-info-links {
-}
 .contact-link {
   font-style: normal;
   line-height: 1.5;
